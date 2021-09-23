@@ -25,19 +25,19 @@
         &.inst {
             background-color: rgb(235, 56, 67);
             &:after {
-                background-image: url("/img/svg/inst.svg");
+                background-image: url("../img/svg/inst.svg");
             }
         }
         &.telegram {
             background-color: rgb(0, 136, 204);
             &:after {
-                background-image: url("/img/svg/telegram.svg");
+                background-image: url("../img/svg/telegram.svg");
             }
         }
         &.whatsapp {
             background-color: rgb(255, 255, 255);
             &:after {
-                background-image: url("/img/svg/whatsapp.svg");
+                background-image: url("../img/svg/whatsapp.svg");
             }
         }
         &:last-of-type {

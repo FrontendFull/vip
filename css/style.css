@@ -499,19 +499,19 @@ li.counter li:before {
   background-color: #eb3843;
 }
 .social_wrap .social_item.inst:after {
-  background-image: url("/img/svg/inst.svg");
+  background-image: url("../img/svg/inst.svg");
 }
 .social_wrap .social_item.telegram {
   background-color: #0088cc;
 }
 .social_wrap .social_item.telegram:after {
-  background-image: url("/img/svg/telegram.svg");
+  background-image: url("../img/svg/telegram.svg");
 }
 .social_wrap .social_item.whatsapp {
   background-color: white;
 }
 .social_wrap .social_item.whatsapp:after {
-  background-image: url("/img/svg/whatsapp.svg");
+  background-image: url("../img/svg/whatsapp.svg");
 }
 .social_wrap .social_item:last-of-type {
   margin-bottom: 0;
