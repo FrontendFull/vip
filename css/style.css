@@ -358,7 +358,6 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../img/svg/bg.svg");
   opacity: 0.05;
   z-index: 1;
   pointer-events: none;
@@ -538,9 +537,10 @@ a:hover {
 .banner {
   padding: 30px 0;
   width: 100%;
-  height: 90vh;
+  height: 75vh;
   min-height: 350px;
   background-image: url("../img/fon.jpg");
+  position: relative;
 }
 .banner .logo {
   margin-right: 25px;
@@ -550,6 +550,16 @@ a:hover {
     margin-right: 10px;
     max-width: 180px;
   }
+}
+.banner::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0) 100%);
 }
 @media (max-width: 767px) {
   .banner {
@@ -655,8 +665,8 @@ a:hover {
   position: absolute;
   top: 0;
   right: 0;
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   background-image: url("../img/top_master.webp");
   background-repeat: no-repeat;
   background-position: center;
@@ -680,8 +690,8 @@ a:hover {
   padding-top: 117%;
 }
 .masters_inner .master_item .img_warp img {
-  width: calc(100%);
-  height: calc(100%);
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
 }
 .masters_inner .master_item .number_block {
   display: block;
@@ -689,6 +699,7 @@ a:hover {
   top: 10px;
   left: 10px;
   padding: 5px 10px;
+  font-size: 16px;
   background-color: #222222;
   cursor: pointer;
 }
