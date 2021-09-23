@@ -1,0 +1,21 @@
+//@charset "UTF-8";
+@import "var";
+//mixin
+@import "mixins/breakpoints";
+@import "mixins/font-size";
+
+//scss
+@import "resize-style.scss";
+@import "fonts.scss";
+@import "base";
+
+//libs
+
+//components
+//@import "components/button";
+@import "components/object-fit";
+
+//layouts
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/main";

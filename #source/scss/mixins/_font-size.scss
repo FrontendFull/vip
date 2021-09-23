@@ -1,0 +1,73 @@
+@mixin fz($desktop, $mob) {
+  @media (min-width: $max-width+30+px) {
+    font-size: #{$desktop + px};
+  }
+  font-size: calc(
+    #{$mob+px} + (#{$desktop} - #{$mob}) * ((100vw - #{$min-width+px}) / (#{$max-width} - #{$min-width}))
+  );
+  @media (max-width: $min-width+px) {
+    font-size: #{$mob + px};
+  }
+}
+
+@mixin mb($desktop, $mob) {
+  @media (min-width: $max-width+30+px) {
+    margin-bottom: #{$desktop + px};
+  }
+  margin-bottom: calc(
+    #{$mob+px} + (#{$desktop} - #{$mob}) * ((100vw - #{$min-width+px}) / (#{$max-width} - #{$min-width}))
+  );
+  @media (max-width: $min-width+px) {
+    margin-bottom: #{$mob + px};
+  }
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 0.2px;
+  color: #fff;
+  text-align: center;
+}
+
+h1,
+.h1 {
+  @include fz(52, 42);
+  @include mb(60, 60);
+}
+h2,
+.h2 {
+  @include fz(36, 24);
+  @include mb(30, 15);
+}
+h3,
+.h3 {
+  @include fz(32, 20);
+  @include mb(30, 15);
+}
+h4,
+.h4 {
+  @include fz(28, 18);
+  @include mb(30, 15);
+}
+h5,
+.h5 {
+  @include fz(24, 16);
+  @include mb(30, 15);
+}
+h6,
+.h6 {
+  @include fz(20, 14);
+  @include mb(30, 15);
+}
